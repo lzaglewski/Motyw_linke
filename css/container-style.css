@@ -1,0 +1,243 @@
+#content, .post {
+    color: #555555;
+    margin-top: 30px;
+}
+
+.text {
+    padding-left: 160px;
+    margin-top: 40px;
+    margin-right: -50px
+}
+
+.text p, .post p, .text>ul, .text>ul>li {
+	padding: 20px 50px 0 90px;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: justify;
+    text-indent: 30px;
+    line-height: 27px;
+}
+
+.text a {
+    text-decoration: none;
+    color: #005FC2;
+}
+
+.text a:hover {
+    text-decoration: underline;
+    color: #005FC2;
+    cursor: pointer;
+}
+
+.text>ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.text>ul>li {
+    padding-left: 20px;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+
+.text>ul>p {
+    display: none;
+}
+
+.text h2, .post h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.text h2 {
+    display: none;
+}
+
+.name {
+    position: absolute;
+    bottom: 10px;
+    left: calc(10% - 98px); 
+    font-size: 33px;
+    color: #eee;
+    font-weight: bolder;
+    text-shadow: 4px 2px 7px #444;
+}
+
+
+/******* Modal Rozporządzenie Ministra ****************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 30px;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    z-index: 100; /* Sit on top */
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*******************************************************/
+
+#map {
+
+}
+
+
+#banner {
+  height: 450px;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  top: 75px;
+}
+
+/*#fscf_submit1 {
+    position: relative;
+    top: 10px;
+}
+*/
+
+#contact-wrap > div{
+    margin: 60px auto;
+}
+
+#contact {
+    width: 30%;
+    margin-top: 100px;
+}
+
+#contact-info {
+    text-align: center;
+    height: 200px;
+    width: 40%;
+}
+
+#contact-info > div {
+    width: 50%;
+    float: left;
+}
+
+#contact-info > div:nth-child(2) {
+    padding-top: 50px;
+}
+
+#contact-info p {
+    padding: 0;
+    font-size: 20px;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+button.wpforms-submit, label.wpforms-field-label {
+    width: 100% !important;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium, div.wpforms-container-full .wpforms-form select.wpforms-field-medium, div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+}
+/*
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-small, div#wpforms-373-field_2-container {
+    max-width: 100% !important;
+}*/
+
+label.wpforms-field-label {
+    padding-bottom: 20px !important;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 1800px) {
+
+    #banner {
+        height: 405px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .text p, .text h2, .text ul {
+        padding: 10px 0px 0 90px;
+    }
+
+    #banner {
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #banner {
+        height: 315px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #contact-info {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #banner {
+        height: 270px;
+    }
+
+    .text {
+        padding-left: 200px;
+    }
+
+    .name {
+        left: 9%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .text p, .text h2, .text ul {
+        padding: 5% 5% 0 5%;
+    }
+
+    #banner {
+        height: 225px;
+    }
+
+    .name {
+        left: 5%;
+    }
+
+    #contact {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    #contact-info {
+        width: 80%;
+    }
+}

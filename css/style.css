@@ -1,0 +1,187 @@
+html,body {
+	margin: 0;
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555555;
+    
+}
+
+form.search-form {
+	position: relative;
+	left: 25px;
+	top: 17px;
+	z-index: -1;
+}
+
+#main-photo {
+	width: 100%;
+	background-image: url('../photos/Front.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 450px;
+	margin-top: -80px;
+}
+
+/*********      MAPA      ********/
+
+#map {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*********************************/
+
+.container {
+	min-height: 500px;
+	padding-top: 0px;
+	clear: both;
+	background-color: #fff;
+	padding-bottom: 50px;
+	z-index: 50;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  	top: 75px;
+}
+
+footer {
+	position: relative;
+	top: 200px;
+	clear: both;
+	height: 60px;
+	background-color: #555555;
+	z-index: 100;
+	box-shadow: 0px 2px 20px #777;
+
+}
+
+footer img {
+	height: 30px;
+	width: 30px;
+	margin-left: 5px;
+}
+
+.footer-line {
+	width: 80%;
+	height: 40px;
+	margin: 0 auto;
+	color: #ddd;
+	font-size: 13px;
+	line-height: 40px;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	right: 8%;
+	text-transform: uppercase;
+}
+
+.footer-line:nth-child(2) {
+	right: 5%;
+}
+
+.findus {
+	width: 20%;
+	min-width: 100px;
+	text-align: right;
+	position: absolute;
+	top: 5px;
+	/*left: 23%;*/
+}
+
+.footer-line a {
+	text-decoration: none;
+	position: relative;
+	text-transform: lowercase;
+}
+
+.findus a {
+	top: 10px;
+}
+
+a.mail-a {
+	left: 10px;
+	color: #0274B3;
+}
+
+form.search-form input{
+	height: 20px;
+	position: relative;
+	top: 7px;
+	width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+form.search-form input:focus{
+	width: 120px;
+}
+
+button.search-button {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	top: 10px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	background-image: url('../photos/search-icon.png');
+    background-size: 20px 20px;
+    background-position: 0px 3px;
+    background-repeat: no-repeat
+}
+
+@-moz-document url-prefix() {
+    button.search-button {
+		position: relative;
+		top: 0px;
+	}
+}
+
+ul#menu-main-menu > li:hover {
+	color: #005FC2;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.footer-line:nth-child(2) {
+		height: 40px;
+		line-height: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.footer-line {
+		top: 20px;
+	}
+	.findus {
+
+		top: 5px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+    .mail-a {
+    	display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.contact-form-message{
+	    width: 100% !important;
+	}
+
+    #contact{
+    	margin-left: 0;
+	}
+}
+
+
+
